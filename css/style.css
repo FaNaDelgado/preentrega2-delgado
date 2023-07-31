@@ -1,0 +1,330 @@
+@font-face {
+    font-family: poppins;
+    src: url(./font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-semibold;
+    src: url(./font/Poppins-SemiBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color:#414b3b;
+}
+.bannerprincipal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background-image: url('../multimedia/img/bannerbici.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.navegador{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.logo{
+    height: 140px;
+    object-fit: cover;
+    margin: 30px 0px;
+}
+.navegador ul{
+    list-style: none;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    margin-right: 15px;
+}
+.navegador ul a{
+    color:#ab8742 ;
+    text-decoration: none;
+    padding: 20px;
+    font-family: poppins-semibold;
+}
+.navegador ul a:hover{
+    color: #414b3b ;
+    text-decoration: none;
+    padding: 20px;
+    font-family: poppins-semibold;
+}
+.navegador2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #ab8742;
+}
+.navegador2 ul{
+    list-style: none;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    margin-right: 15px;
+}
+.navegador2 ul a{
+    color:#414b3b ;
+    text-decoration: none;
+    padding: 20px;
+    font-family: poppins-semibold;
+}
+.navegador2 ul a:hover{
+    color: #fff9f3;
+    font-size: poppins-semibold;
+    text-decoration: none;
+    padding: 20px;
+}
+.navegador2 ul .boton a {
+    color: #ab8742;
+    text-decoration: none; 
+  }
+.navegador2 ul .boton a:hover {
+    color: #fff9f3;
+    text-decoration: none; 
+  }
+.navegador .fa-bars{
+    display: none;
+}
+  @media(max-width:1020px){
+    .navegador .fa-bars{
+        display: block;
+        margin: 40px;
+        font-size: 60px;
+        color: #414b3b;
+        margin-top: 60px;
+        
+    }
+    .navegador .fa-bars:hover + ul{
+        left: 0;
+    }
+    .navegador ul {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff9f3;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    .navegador ul:hover{
+        left: 0;
+    }
+    .navegador ul a{
+        color:#ab8742;
+    }
+    ul li {
+        margin-bottom: 50px;
+      }
+  }
+  .navegador2 .fa-bars{
+    display: none;
+}
+  @media(max-width:1020px){
+    .navegador2 .fa-bars{
+        display: block;
+        margin: 40px;
+        font-size: 60px;
+        color: #414b3b;
+        margin-top: 60px;
+        
+    }
+    .navegador2 .fa-bars:hover + ul{
+        left: 0;
+    }
+    .navegador2 ul {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff9f3;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        transform: 0.5s;
+
+    }
+    .navegador2 ul:hover{
+        left: 0;
+    }
+    .navegador2 ul a{
+        color:#ab8742 ;
+    }
+  }
+.encabezado {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+}
+.logogrande {
+    float: right;
+    max-width: 100%;
+    height: auto;  
+}
+@media(max-width:1020px){
+    .logogrande{
+        display: none;
+    }
+}
+h1{
+    font-size: 36px;
+    color: #fff9f3;
+    font-family: poppins-semibold;
+    text-align: center;
+    margin-top: 60px;
+}
+h2{
+    font-size: 36px;
+    color: #fff9f3;
+    font-family: poppins-semibold;
+    text-align: center;
+    margin-top: 60px;
+}
+.noticias-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.noticias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff9f3;
+    width: 400px;
+    border: 1px solid #414b3b;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: poppins;
+    margin-right: 20px;
+
+}
+.noticias img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.noticias h4{
+    font-size: 22px;
+    color: #414b3b;
+    text-align: center;
+    font-family: poppins-semibold;
+}
+p{
+    color: #414b3b;
+    text-align: center;
+}
+.eventos-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.eventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff9f3;
+    width: 270px;
+    border: 1px solid #414b3b;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 0px 0px 25px 25px;
+    font-family: poppins;
+}
+.eventos img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.eventos h4{
+    font-size: 22px;
+    color: #414b3b;
+    text-align: center;
+    font-family: poppins-semibold;
+}
+.eventos h5{
+    font-size: 18px;
+    color: #414b3b;
+    text-align: center;
+    align-items: center;
+    font-family: poppins-semibold;
+}
+.boton{
+    background-color: #414b3b;
+    color: #fff9f3;
+    padding: 10px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-family:poppins-semibold;
+}
+.boton:hover{
+    background-color: #ab8742;
+    color: #414b3b;
+    font-family: poppins-semibold;
+}
+.calendario{
+    color: #fff9f3;
+    margin: 10px;
+    font-family: poppins;
+}
+.nosotros{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+.nosotros p{
+    align-items: center;
+    width: 1200px;
+    color: #fff9f3;
+    font-family: poppins;
+}
+.whatsapp{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ab8742;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 5px 5px 15px 5px #414b3b;
+}
+.whatsapp i{
+    font-size: 48px;
+    color: #414b3b;
+}
+.redes {
+    background-color: #ab8742;
+    color: #414b3b;
+    height: 150px;
+    text-align: center;
+    font-size: 48px;
+    padding: 50px;
+}
+.redes a i{
+    font-size: 48px;
+    color: #414b3b;
+}
+.redes a i:hover{
+    background-color: #414b3b;
+    color: #ab8742;  
+}
+.mensajefooter{
+    color: #fff9f3;
+    height: 72px;
+    text-align: center;
+    padding: 21px;
+    font-family: poppins-semibold;
+}
