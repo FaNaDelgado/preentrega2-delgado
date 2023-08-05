@@ -224,33 +224,32 @@ p{
 .eventos-container{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 160px;
 }
-.eventos{
+.evento-destacado{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     background-color: #fff9f3;
-    width: 270px;
+    width: 400px;
     border: 1px solid #414b3b;
-    margin: 10px;
+    margin: 25px;
     padding: 10px;
     border-radius: 0px 0px 25px 25px;
     font-family: poppins;
 }
-.eventos img{
+.evento-destacado img{
     width: 100%;
-    height: 200px;
+    height: 350px;
     object-fit: cover;
 }
-.eventos h4{
+.evento-destacado h4{
     font-size: 22px;
     color: #414b3b;
     text-align: center;
     font-family: poppins-semibold;
 }
-.eventos h5{
+.evento-destacado h5{
     font-size: 18px;
     color: #414b3b;
     text-align: center;
@@ -271,10 +270,26 @@ p{
     color: #414b3b;
     font-family: poppins-semibold;
 }
+.calendario-eventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 25px;
+    padding: 10px;
+    font-family: poppins;
+}
 .calendario{
     color: #fff9f3;
     margin: 10px;
     font-family: poppins;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.calendario td{
+    text-align: center;
+    padding: 30px 15px;
 }
 .nosotros{
     display: flex;
