@@ -1,0 +1,30 @@
+.noticias-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    .noticias{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #fff9f3;
+        width: 400px;
+        border: 1px solid #414b3b;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 6px;
+        font-family: poppins;
+        margin-right: 20px;
+        img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        h4{
+            font-size: 22px;
+            color: #414b3b;
+            text-align: center;
+            font-family: poppins-semibold;
+        }
+    
+    }
+}

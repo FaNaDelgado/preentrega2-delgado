@@ -1,0 +1,27 @@
+@font-face {
+    font-family: poppins;
+    src: url(./font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-semibold;
+    src: url(./font/Poppins-SemiBold.ttf);
+}
+@import"reset";
+@import"color-body";
+@import"bannerprincipal";
+@import"navegador";
+@import"navegador2";
+@import"encabezado";
+@import"logogrande";
+@import"h1";
+@import"h2";
+@import"noticias-container";
+@import"parrafos";
+@import"eventos-container";
+@import"boton";
+@import"nosotros";
+@import"whatsapp";
+@import"redes";
+@import"mensaje-footer";
+@import"galeria";
+@import"grupos";

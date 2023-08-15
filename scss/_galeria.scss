@@ -1,0 +1,28 @@
+.galeria{
+    display: grid;
+    margin: 30px;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "vertical1 verticala horizontal1 horizontal1"
+                         "vertical1 vertical2 medio1 medio2"
+                         "vertiucalb vertical2 horizontal2 horizontal2";
+                         img{
+                            width: 100%;  
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 25px;
+                            transition: transform 0.3s ease;
+                        }
+                        img:hover{
+                            transform: scale(1.1);
+                            }
+}
+    .vertical1 { grid-area: vertical1; }
+    .vertical2 { grid-area: vertical2; }
+    .verticala { grid-area: verticala; }
+    .vertiucalb { grid-area: vertiucalb; }
+    .horizontal1 { grid-area: horizontal1; }
+    .horizontal2 { grid-area: horizontal2; }
+    .medio1 { grid-area: medio1; } 
+    .medio2 { grid-area: medio2; }

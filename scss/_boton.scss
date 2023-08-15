@@ -1,0 +1,14 @@
+.boton{
+    background-color: #414b3b;
+    color: #fff9f3;
+    padding: 10px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-family:poppins-semibold;
+    &:hover{
+        background-color: #ab8742;
+        color: #414b3b;
+        font-family: poppins-semibold;
+    }
+}

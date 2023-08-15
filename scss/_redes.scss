@@ -1,0 +1,16 @@
+.redes{
+    background-color: #ab8742;
+    color: #414b3b;
+    height: 150px;
+    text-align: center;
+    font-size: 48px;
+    padding: 50px;
+    a i{
+        font-size: 48px;
+        color: #414b3b;
+        &:hover{
+            background-color: #414b3b;
+            color: #ab8742;  
+        }
+    }
+}
