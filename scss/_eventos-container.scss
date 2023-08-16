@@ -1,59 +1,70 @@
 .eventos-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 160px;
-    .evento-destacado{
+    .contenedor-columna{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #fff9f3;
-        width: 400px;
-        border: 1px solid #414b3b;
-        margin: 25px;
-        padding: 10px;
-        border-radius: 0px 0px 25px 25px;
-        font-family: poppins;
-        img{
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-        }
-        h4{
-            font-size: 22px;
-            color: #414b3b;
-            text-align: center;
-            font-family: poppins-semibold;
-        }
-        h5{
-            font-size: 18px;
-            color: #414b3b;
-            text-align: center;
-            align-items: center;
-            font-family: poppins-semibold;
-        }
-    }
-    .calendario-eventos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 400px;
-        margin: 25px;
-        padding: 10px;
-        font-family: poppins;
-        .calendario{
+        flex-wrap: wrap;
+        h2{
             color: #fff9f3;
-            margin: 10px;
-            font-family: poppins;
+            margin-bottom: 30px;
+        }
+        .evento-destacado{
             display: flex;
-            justify-content: center;
-            font-size: 30px;
-            td{
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff9f3;
+            width: 400px;
+            border: 1px solid #414b3b;
+            margin-bottom: 25px;
+            padding: 10px;
+            border-radius: 0px 0px 25px 25px;
+            font-family: poppins;
+            img{
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+            }
+            h4{
+                font-size: 22px;
+                color: #414b3b;
                 text-align: center;
-                padding: 30px 15px;
-                &:hover{
-                    color: #ab8742;
+                font-family: poppins-semibold;
+            }
+            h5{
+                font-size: 18px;
+                color: #414b3b;
+                text-align: center;
+                align-items: center;
+                font-family: poppins-semibold;
+            }
+        }
+        .calendario-eventos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            font-family: poppins;
+            .calendario{
+                color: #fff9f3;
+                margin: 10px;
+                font-family: poppins;
+                display: flex;
+                justify-content: center;
+                font-size: 30px;
+                td{
+                    text-align: center;
+                    padding: 30px 15px;
+                    &:hover{
+                        color: #ab8742;
+                    }
                 }
             }
         }
+        
     }
+    
 }

@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
     .noticias{
         display: flex;
         flex-wrap: wrap;
@@ -14,6 +17,10 @@
         border-radius: 6px;
         font-family: poppins;
         margin-right: 20px;
+        transition: transform 0.3s ease;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
         img{
             width: 100%;
             height: 200px;

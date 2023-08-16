@@ -1,6 +1,6 @@
 .galeria{
     display: grid;
-    margin: 30px;
+    margin: 60px;
     gap: 15px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -13,10 +13,10 @@
                             object-fit: cover;
                             border-radius: 25px;
                             transition: transform 0.3s ease;
+                            &:hover{
+                                transform: scale(1.1);
+                                }
                         }
-                        img:hover{
-                            transform: scale(1.1);
-                            }
 }
     .vertical1 { grid-area: vertical1; }
     .vertical2 { grid-area: vertical2; }
