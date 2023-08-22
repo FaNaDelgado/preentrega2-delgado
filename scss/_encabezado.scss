@@ -3,3 +3,8 @@
     height: 700px;
     background-size: cover;
 }
+@media(max-width:1020px){
+    .encabezado{
+        display: none;
+    }
+}

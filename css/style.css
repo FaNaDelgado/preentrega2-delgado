@@ -28,6 +28,11 @@
   z-index: -1;
 }
 
+@media (max-width: 1020px) {
+  .bannerprincipal {
+    display: none;
+  }
+}
 .navegador {
   display: flex;
   align-items: flex-start;
@@ -58,6 +63,12 @@
 }
 
 @media (max-width: 1020px) {
+  .navegador {
+    background-color: #ab8742;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .navegador .fa-bars {
     display: block;
     margin: 45px;
@@ -134,6 +145,12 @@
 }
 
 @media (max-width: 1020px) {
+  .navegador2 {
+    background-color: #ab8742;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .navegador2 .fa-bars {
     display: block;
     margin: 40px;
@@ -168,6 +185,11 @@
   background-size: cover;
 }
 
+@media (max-width: 1020px) {
+  .encabezado {
+    display: none;
+  }
+}
 .logogrande {
   float: right;
   max-width: 100%;
@@ -237,73 +259,42 @@ p {
   text-align: center;
 }
 
-.eventos-container {
+.layout {
   display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 160px;
 }
-.eventos-container .contenedor-columna {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.eventos-container .contenedor-columna h2 {
-  color: #fff9f3;
-  margin-bottom: 30px;
-}
-.eventos-container .contenedor-columna .evento-destacado {
+.layout .evento-destacado {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff9f3;
-  width: 400px;
-  border: 1px solid #414b3b;
-  margin-bottom: 25px;
+  margin: 10px;
   padding: 10px;
   border-radius: 0px 0px 25px 25px;
   font-family: poppins;
 }
-.eventos-container .contenedor-columna .evento-destacado img {
+.layout .evento-destacado img {
   width: 100%;
-  height: 350px;
+  height: 250px;
   object-fit: cover;
+  margin-bottom: 40px;
 }
-.eventos-container .contenedor-columna .evento-destacado h4 {
-  font-size: 22px;
-  color: #414b3b;
-  text-align: center;
-  font-family: poppins-semibold;
-}
-.eventos-container .contenedor-columna .evento-destacado h5 {
-  font-size: 18px;
-  color: #414b3b;
-  text-align: center;
-  align-items: center;
-  font-family: poppins-semibold;
-}
-.eventos-container .contenedor-columna .calendario-eventos {
+.layout .calendario-eventos {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
-  font-family: poppins;
-}
-.eventos-container .contenedor-columna .calendario-eventos .calendario {
-  color: #fff9f3;
-  margin: 10px;
-  font-family: poppins;
-  display: flex;
   justify-content: center;
-  font-size: 30px;
+  align-items: center;
+  font-family: poppins;
 }
-.eventos-container .contenedor-columna .calendario-eventos .calendario td {
-  text-align: center;
-  padding: 30px 15px;
+.layout .calendario-eventos .mes {
+  font-size: 38px;
+  color: #fff9f3;
 }
-.eventos-container .contenedor-columna .calendario-eventos .calendario td:hover {
-  color: #ab8742;
+.layout .calendario-eventos .mes .boton {
+  background-color: #ab8742;
+  /*width: calc((600px - 20px) / 3); esto le da forma perfecta al boton*/
 }
 
 .boton {
@@ -473,6 +464,28 @@ p {
 }
 .grupos .grupo .nombre-grupo p {
   color: #fff9f3;
+}
+
+@media (max-width: 768px) {
+  .grupos {
+    gap: 30px;
+    margin: 30px 0;
+  }
+  .grupos .grupo {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .grupos .grupo:hover {
+    display: none;
+  }
+  .grupos .grupo .img-grupo img {
+    height: 150px;
+    width: 150px;
+  }
+  .grupos .grupo .nombre-grupo {
+    padding: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
