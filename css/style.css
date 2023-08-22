@@ -66,7 +66,7 @@
   .navegador {
     background-color: #ab8742;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   .navegador .fa-bars {
@@ -74,7 +74,6 @@
     margin: 45px;
     font-size: 60px;
     color: #414b3b;
-    margin-top: 60px;
   }
   .navegador .fa-bars:hover + ul {
     left: 0;
@@ -82,7 +81,7 @@
   .navegador ul {
     position: fixed;
     top: 0;
-    left: -400px;
+    left: 100%;
     width: 100%;
     height: 100%;
     background-color: #fff9f3;
@@ -90,7 +89,6 @@
     align-items: center;
     margin-top: 0px;
     padding-top: 100px;
-    transition: top 0.3s;
   }
   .navegador ul:hover {
     left: 0;
@@ -102,12 +100,22 @@
     margin-bottom: 50px;
   }
 }
+@media (max-width: 510px) {
+  .navegador .fa-bars {
+    font-size: 40px;
+  }
+}
 .logo {
   height: 140px;
   object-fit: cover;
   margin: 30px 0px;
 }
 
+@media (max-width: 510px) {
+  .logo {
+    height: 80px;
+  }
+}
 .navegador2 {
   display: flex;
   align-items: flex-start;
@@ -150,15 +158,14 @@
   .navegador2 {
     background-color: #ab8742;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   .navegador2 .fa-bars {
     display: block;
-    margin: 40px;
+    margin: 45px;
     font-size: 60px;
     color: #414b3b;
-    margin-top: 60px;
   }
   .navegador2 .fa-bars:hover + ul {
     left: 0;
@@ -180,6 +187,11 @@
   }
   .navegador2 ul a {
     color: #ab8742;
+  }
+}
+@media (max-width: 510px) {
+  .navegador2 .fa-bars {
+    font-size: 40px;
   }
 }
 .encabezado {

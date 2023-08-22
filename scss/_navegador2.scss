@@ -38,15 +38,14 @@
     .navegador2{
         background-color: #ab8742;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .navegador2 .fa-bars{
         display: block;
-        margin: 40px;
+        margin: 45px;
         font-size: 60px;
         color: #414b3b;
-        margin-top: 60px;
         
     }
     .navegador2 .fa-bars:hover + ul{
@@ -69,5 +68,10 @@
     }
     .navegador2 ul a{
         color:#ab8742 ;
+    }
+}
+@media(max-width:510px){
+    .navegador2 .fa-bars{   
+        font-size: 40px;   
     }
 }
