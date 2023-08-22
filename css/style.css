@@ -276,9 +276,10 @@ p {
 
 .layout {
   display: flex;
-  gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 80px;
+  margin-bottom: 40px;
 }
 .layout .evento-destacado {
   display: flex;
@@ -296,20 +297,48 @@ p {
   object-fit: cover;
   margin-bottom: 40px;
 }
-.layout .calendario-eventos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.layout .layout2 {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
   font-family: poppins;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.layout .calendario-eventos .mes {
+.layout .layout2 .mes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 38px;
   color: #fff9f3;
 }
-.layout .calendario-eventos .mes .boton {
+.layout .layout2 .mes .boton {
   background-color: #ab8742;
-  /*width: calc((600px - 20px) / 3); esto le da forma perfecta al boton*/
+  width: 193.3333333333px;
+}
+@media (max-width: 710px) {
+  .layout .layout2 {
+    display: none;
+  }
+}
+@media (max-width: 710px) {
+  .layout .layout2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+  }
+  .layout .layout2 .mes {
+    font-size: 38px;
+    color: #fff9f3;
+  }
+  .layout .layout2 .mes .boton {
+    background-color: #ab8742;
+    width: 193.3333333333px; /*esto le da forma perfecta al boton*/
+  }
 }
 
 .boton {
@@ -330,7 +359,7 @@ p {
 .nosotros {
   display: flex;
   justify-content: center;
-  margin: 100px;
+  margin: 30px;
 }
 .nosotros p {
   align-items: center;
