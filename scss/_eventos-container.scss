@@ -1,4 +1,4 @@
-.layout {
+.eventos-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,8 +19,21 @@
             object-fit: cover;
             margin-bottom: 40px;
         }
+        h4{
+            font-size: 22px;
+            color: #414b3b;
+            text-align: center;
+            font-family: poppins-semibold;
+        }
+        h5{
+            font-size: 18px;
+            color: #414b3b;
+            text-align: center;
+            align-items: center;
+            font-family: poppins-semibold;
+        }
     }
-    .layout2 {
+    .calendario-eventos {
         width: 100%;
         display: grid;
         grid-template-rows: repeat(4, 1fr);
@@ -42,12 +55,12 @@
         }
       }
     @media(max-width:710px){
-        .layout2{
+        .calendario-eventos{
             display: none;
         }
     }
     @media(max-width:710px){
-        .layout2{
+        .calendario-eventos{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;

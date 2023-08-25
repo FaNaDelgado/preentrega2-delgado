@@ -26,3 +26,14 @@
     .horizontal2 { grid-area: horizontal2; }
     .medio1 { grid-area: medio1; } 
     .medio2 { grid-area: medio2; }
+
+@media(max-width:700px){
+    .galeria{
+        display: none;
+    }
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px;
+    }
+}

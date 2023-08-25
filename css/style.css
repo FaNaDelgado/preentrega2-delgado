@@ -274,14 +274,14 @@ p {
   text-align: center;
 }
 
-.layout {
+.eventos-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 80px;
   margin-bottom: 40px;
 }
-.layout .evento-destacado {
+.eventos-container .evento-destacado {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,13 +291,26 @@ p {
   border-radius: 0px 0px 25px 25px;
   font-family: poppins;
 }
-.layout .evento-destacado img {
+.eventos-container .evento-destacado img {
   width: 100%;
   height: 250px;
   object-fit: cover;
   margin-bottom: 40px;
 }
-.layout .layout2 {
+.eventos-container .evento-destacado h4 {
+  font-size: 22px;
+  color: #414b3b;
+  text-align: center;
+  font-family: poppins-semibold;
+}
+.eventos-container .evento-destacado h5 {
+  font-size: 18px;
+  color: #414b3b;
+  text-align: center;
+  align-items: center;
+  font-family: poppins-semibold;
+}
+.eventos-container .calendario-eventos {
   width: 100%;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -307,35 +320,35 @@ p {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.layout .layout2 .mes {
+.eventos-container .calendario-eventos .mes {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 38px;
   color: #fff9f3;
 }
-.layout .layout2 .mes .boton {
+.eventos-container .calendario-eventos .mes .boton {
   background-color: #ab8742;
   width: 193.3333333333px;
 }
 @media (max-width: 710px) {
-  .layout .layout2 {
+  .eventos-container .calendario-eventos {
     display: none;
   }
 }
 @media (max-width: 710px) {
-  .layout .layout2 {
+  .eventos-container .calendario-eventos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     font-family: poppins;
   }
-  .layout .layout2 .mes {
+  .eventos-container .calendario-eventos .mes {
     font-size: 38px;
     color: #fff9f3;
   }
-  .layout .layout2 .mes .boton {
+  .eventos-container .calendario-eventos .mes .boton {
     background-color: #ab8742;
     width: 126.6666666667px;
   }
@@ -354,18 +367,67 @@ p {
   background-color: #ab8742;
   color: #414b3b;
   font-family: poppins-semibold;
+  cursor: pointer;
 }
 
-.nosotros {
+.layout {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 30px;
+  margin: 20px;
+  padding: 10px;
+  margin-right: 20px;
 }
-.nosotros p {
-  align-items: center;
-  width: 1200px;
+.layout .grow1 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.layout .grow1 img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px 0px 0px 15px;
+  justify-self: center;
+  align-self: center;
+}
+.layout .grow1 .img2 {
+  border-radius: 0px 15px 15px 0px;
+}
+.layout .grow1 p {
   color: #fff9f3;
   font-family: poppins;
+  font-size: 30px;
+  justify-self: center;
+  align-self: center;
+}
+@media (max-width: 1290px) {
+  .layout .grow1 {
+    display: none;
+  }
+}
+@media (max-width: 1290px) {
+  .layout .grow1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .layout .grow1 img {
+    border-radius: 5px;
+  }
+  .layout .grow1 .img2 {
+    border-radius: 5px;
+  }
+}
+@media (max-width: 510px) {
+  .layout .grow1 p {
+    font-size: 20px;
+  }
+  .layout .grow1 .img2 {
+    order: -1;
+  }
 }
 
 .whatsapp {
@@ -463,6 +525,16 @@ p {
   grid-area: medio2;
 }
 
+@media (max-width: 700px) {
+  .galeria {
+    display: none;
+  }
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+  }
+}
 .grupos {
   width: 100%;
   display: flex;
